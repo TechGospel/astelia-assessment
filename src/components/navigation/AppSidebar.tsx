@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { NavMain } from "@/components/navigation/NavMain";
-import { NavUser } from "@/components/navigation/NavUser";
+import { NavMenu } from "@/components/navigation/NavMenu";
 import { NavHeader } from "@/components/navigation/NavHeader";
 import {
   Sidebar,
@@ -99,7 +99,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarFooter>
         <Separator />
 
-        <NavUser user={data.user} />
+        <NavMenu user={data.user} />
       </SidebarFooter>
       <SidebarRail />
     </Sidebar>
