@@ -29,7 +29,7 @@ const InfoOne = () => {
           {Array.from({ length: 6 }).map((_, index) => (
             <div
               key={index}
-              className="text-semibold w-28 rounded-md bg-yellow-100 pr-2 text-13 font-semibold leading-[22px] text-yellow-600"
+              className="text-semibold w-28 rounded-md bg-red-50 pl-1 pr-2 text-13 font-semibold leading-[22px] text-red-700"
             >
               1.2.3.4
             </div>
@@ -37,7 +37,7 @@ const InfoOne = () => {
         </div>
 
         {/* Highlighted Item */}
-        <div className="text-semibold mt-3 w-fit bg-blue-100 pr-2 text-13 font-semibold text-blue-600">
+        <div className="text-semibold mt-3 w-fit rounded-sm bg-purple-100 pl-1 pr-2 text-13 font-semibold text-purple-600">
           Lorem: 1.2.3.4
         </div>
       </div>
@@ -64,7 +64,7 @@ const InfoTwo = () => {
           Lorem:
         </span>{" "}
         Loremipsum Loremipsum
-        <span className="ml-2 rounded-sm bg-blue-100 p-1 text-13 font-bold text-blue-600">
+        <span className="ml-2 rounded-sm bg-purple-100 p-1 text-13 font-bold text-purple-600">
           1.2.3.4
         </span>
       </p>
@@ -73,7 +73,7 @@ const InfoTwo = () => {
         {["1.2.3.4", "Loremipsum", "1.2.3.4", "1.2.3.4"].map((tag, index) => (
           <span
             key={index}
-            className="text-semibold mt-3 w-fit rounded-sm bg-blue-100 p-1 pr-2 text-13 font-semibold text-blue-600"
+            className="text-semibold mt-3 w-fit rounded-sm bg-purple-100 p-1 pr-2 text-13 font-semibold text-purple-600"
           >
             {tag}
           </span>

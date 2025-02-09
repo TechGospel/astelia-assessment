@@ -65,7 +65,7 @@ const data = {
       icon: MenuItem6,
     },
     {
-      title: "Documentation",
+      title: "Lorem",
       url: "#",
       icon: MenuItem7,
     },
@@ -93,7 +93,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarHeader className="p-0 pt-7">
         <NavHeader />
       </SidebarHeader>
-      <SidebarContent className="mt-[30px]">
+      <SidebarContent className="">
         <NavMain items={data.navMain} />
       </SidebarContent>
       <SidebarFooter>

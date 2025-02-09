@@ -19,7 +19,9 @@ export function NavHeader() {
           size="lg"
           className="h-auto px-3.5 py-0 hover:bg-transparent data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
         >
-          <Image src="/images/logo.png" alt="logo" width={30} height={30} />
+          {!open && (
+            <Image src="/images/logo.png" alt="logo" width={30} height={30} />
+          )}
         </SidebarMenuButton>
       </SidebarMenuItem>
 
