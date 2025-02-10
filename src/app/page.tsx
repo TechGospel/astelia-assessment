@@ -258,7 +258,7 @@ const RightPanel: FC = () => (
 );
 
 const HomePage: FC = () => (
-  <div className="grid h-full w-full max-w-6xl grid-cols-1 gap-4 lg:grid-cols-3">
+  <div className="grid h-full w-full max-w-7xl grid-cols-1 gap-4 lg:grid-cols-3">
     <LeftPanel />
     <RightPanel />
   </div>
