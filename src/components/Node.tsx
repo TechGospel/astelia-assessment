@@ -20,14 +20,22 @@ type DataItem = {
 
 function Node({ data }: { data: DataItem }) {
   const [isHovered, setIsHovered] = useState(false);
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
 
   return (
-    <div
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      <Popover>
-        <PopoverTrigger className="flex flex-col items-center justify-center">
+    <div>
+      <Popover open={isHovered} onOpenChange={setIsHovered}>
+        <PopoverTrigger
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          className="flex flex-col items-center justify-center"
+        >
           <div
             className="relative flex h-[52.92px] w-[52.92px] items-center justify-center rounded-full"
             style={{ backgroundColor: data.iconBg }}
@@ -58,11 +66,14 @@ function Node({ data }: { data: DataItem }) {
           </div>
         </PopoverTrigger>
 
-        {isHovered && (
-          <PopoverContent className="w-fit rounded-[15px] shadow-md">
-            {data.info}
-          </PopoverContent>
-        )}
+        <PopoverContent
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          className="w-fit rounded-[15px] shadow-md"
+        >
+          {data.info}
+        </PopoverContent>
+
         <Handle
           type="target"
           position={Position.Left}

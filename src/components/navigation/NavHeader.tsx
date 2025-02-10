@@ -19,9 +19,10 @@ export function NavHeader() {
           size="lg"
           className="h-auto px-3.5 py-0 hover:bg-transparent data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
         >
-          {!open && (
-            <Image src="/images/logo.png" alt="logo" width={30} height={30} />
-          )}
+          <Image src="/images/logo.png" alt="logo" width={30} height={30} />
+          <div className="grid flex-1 text-left text-3xl leading-tight">
+            <span className="truncate font-semibold">Astelia</span>
+          </div>
         </SidebarMenuButton>
       </SidebarMenuItem>
 

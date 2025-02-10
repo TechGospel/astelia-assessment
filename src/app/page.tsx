@@ -85,16 +85,16 @@ const ServerCard = () => (
               <Server size={26} className="text-blue-600" />
             </div>
             <div>
-              <span className="text-gray-soft-500 text-xs font-bold">
+              <span className="text-xs font-bold text-gray-soft-500">
                 Server
               </span>
-              <p className="text-gray-soft-500 text-10 leading-[10.1px]">
+              <p className="text-10 leading-[10.1px] text-gray-soft-500">
                 Server
               </p>
             </div>
           </div>
           <div className="ml-4 flex-1">
-            <p className="text-gray-soft-900 text-13">
+            <p className="text-13 text-gray-soft-900">
               Lorem Ipsum Dolor Sit Amet Consectetur
             </p>
           </div>
@@ -137,7 +137,7 @@ const columns: ColumnDef<Asset>[] = [
 ];
 
 const LeftPanel: FC = () => (
-  <div className="no-scrollbar rounded-15 col-span-1 mt-[27px] bg-white px-[30px] py-5 shadow-light md:col-span-1 md:h-[calc(100vh-54px)] md:overflow-y-auto">
+  <div className="no-scrollbar col-span-1 mt-[27px] rounded-15 bg-white px-[30px] py-5 shadow-light md:col-span-1 md:h-[calc(100vh-54px)] md:overflow-y-auto">
     <Section title="Description">
       Lorem ipsum dolor sit amet consectetur. Aenean sodales pellentesque
       gravida nibh et magna faucibus. Dui commodo ut metus amet egestas habitant
@@ -199,9 +199,9 @@ const LeftPanel: FC = () => (
 );
 
 const RightPanel: FC = () => (
-  <div className="rounded-15 col-span-1 mt-[27px] h-fit bg-white px-[30px] py-5 shadow-light md:col-span-2 lg:col-span-2">
+  <div className="col-span-1 mt-[27px] h-fit rounded-15 bg-white px-[30px] py-5 shadow-light md:col-span-2 lg:col-span-2">
     <h1 className="text-xl font-bold text-[#02983E]">Lorem Lorem Lorem</h1>
-    <div className="rounded-15 col-span-1 mt-5 bg-background px-[30px] py-5 shadow md:col-span-1">
+    <div className="col-span-1 mt-5 rounded-15 bg-background px-[30px] py-5 shadow md:col-span-1">
       <Flow />
       <Separator className="bg-gray-soft-100" />
       <div className="mt-4 flex flex-wrap gap-4 sm:gap-6">
@@ -258,7 +258,7 @@ const RightPanel: FC = () => (
 );
 
 const HomePage: FC = () => (
-  <div className="grid h-full w-full grid-cols-1 gap-4 lg:grid-cols-3">
+  <div className="grid h-full w-full max-w-6xl grid-cols-1 gap-4 lg:grid-cols-3">
     <LeftPanel />
     <RightPanel />
   </div>
