@@ -9,8 +9,8 @@ const ContextualRisk = () => {
   ];
 
   return (
-    <div className="rounded-15 bg-white px-4 pb-5 pt-4 shadow-md sm:px-8">
-      <h2 className="text-gray-soft-500 mb-4 text-base font-semibold sm:text-lg">
+    <div className="flex flex-1 flex-col rounded-15 border bg-white px-4 pb-5 pt-4 shadow-md sm:px-8">
+      <h2 className="mb-4 text-base font-semibold text-gray-soft-500 sm:text-lg">
         Contextual Risk
       </h2>
       <div className="flex flex-col items-center justify-between space-y-4 sm:flex-row sm:space-y-0">
@@ -33,7 +33,7 @@ const ContextualRisk = () => {
         <div className="mt-4 flex w-full items-center justify-center sm:mt-0 sm:w-auto">
           <div className="relative">
             <div className="flex h-[100px] w-[100px] items-center justify-center rounded-full border-4 border-red-600 sm:h-[150px] sm:w-[150px] sm:border-8">
-              <span className="text-gray-7 text-xl font-bold sm:text-4xl">
+              <span className="text-xl font-bold text-gray-7 sm:text-4xl">
                 2
               </span>
             </div>

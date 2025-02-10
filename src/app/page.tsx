@@ -245,13 +245,9 @@ const RightPanel: FC = () => (
         Lorem ipsum Dolor Sit
       </h1>
 
-      <div className="mt-5 flex flex-wrap gap-5">
-        <div className="flex-1">
-          <DataTable columns={columns} data={assets} pageSize={2} />
-        </div>
-        <div className="flex-1">
-          <ContextualRisk />
-        </div>
+      <div className="mt-5 flex flex-wrap items-stretch gap-5">
+        <DataTable columns={columns} data={assets} pageSize={2} />
+        <ContextualRisk />
       </div>
     </div>
   </div>
